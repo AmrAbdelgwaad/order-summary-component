@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+    --pale-blue:  hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --white-clr: hsl(0, 0%, 100%);
+
+    --ff-Red-Hat: 'Red Hat Display', sans-serif;
+
+}
+
+body{
+    font-family: var(--ff-Red-Hat);
+    background: url(pattern-background-desktop.svg),var(--pale-blue);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+
+main{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-container{
+    max-width: 350px;
+    background-color: var(--white-clr);
+    border-radius: 1rem;
+   
+}
+
+.order-hero{
+    height: 180px;
+    background: url(illustration-hero.svg);
+    border-radius: 1rem 1rem 0 0 ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1,
+p{
+    text-align: center;
+}
+
+h1{
+    font-size: 1.7rem;
+    color: var(--Dark-blue); 
+    margin: 1rem ;
+}
+
+p{
+    color: var(--Desaturated-blue);
+}
+
+.order-description{
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.order-preview{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--Very-pale-blue);
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+  
+}
+
+.order-plan{
+    line-height: 1.5;
+    margin-left: -2rem;
+}
+
+
+.order-plan span{
+    color: var(--Dark-blue);
+    font-weight: bolder;
+    
+}
+
+.order-preview a{
+    align-self: center;
+    margin-left: auto;
+}
+
+.order-preview a:hover{
+    color: var(--Desaturated-blue);
+}
+
+button{
+    border: none;
+    font: inherit;
+    font-weight: 900;
+    background-color: var(--Bright-blue);
+    color: var(--white-clr);
+    padding: .9rem 3.8rem;
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+    box-shadow: -1px 8px 9px 3px rgba(0,0,0,0.18);
+   
+}
+
+
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--Desaturated-blue);
+}
+
+.order-cancel-btn {
+    margin-bottom: 2.5rem;
+}
+
+.order-cancel-btn a{
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+    font-weight: bolder;
+}
+
+.order-cancel-btn a:hover{
+    color: var(--Dark-blue);
+}
+
